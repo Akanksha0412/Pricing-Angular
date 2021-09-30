@@ -1,0 +1,32 @@
+<div class="pricing card mb-5 mb-lg-0">
+    <div class="card-body">
+      <h5 class="card-title text-muted text-uppercase text-center">{{myData.title}}</h5>
+      <h6 class="card-price text-center">{{myData.price}}<span class="period">/month</span></h6>
+      <hr>
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fa fa-check"></i></span>{{myData.lineOne}}</li>
+        <li><span class="fa-li"><i class="fa fa-check"></i></span>{{myData.lineTwo}}</li>
+        <li><span class="fa-li"><i class="fa fa-check"></i></span>{{myData.lineThree}}</li>
+        <li><span class="fa-li"><i class="fa fa-check"></i></span>{{myData.lineFour}}</li>
+        <li [ngClass]="{'text-muted':myData.one.mutedFive}">
+            <span class="fa-li">
+            <i [ngClass]="{'fa-times':myData.one.mutedFive,'fa-check':!myData.one.mutedFive,fa:true}"></i>
+          </span>{{myData.one.lineFive}}</li>
+        <li [ngClass]="{'text-muted':myData.two.mutedSix}">
+            <span class="fa-li">
+            <i [ngClass]="{'fa-times':myData.two.mutedSix,'fa-check':!myData.two.mutedSix,fa:true}"></i>
+          </span>{{myData.two.lineSix}}</li>
+        <li [ngClass]="{'text-muted':myData.three.mutedSeven}">
+            <span class="fa-li">
+            <i [ngClass]="{'fa-times':myData.three.mutedSeven,'fa-check':!myData.three.mutedSeven,fa:true}"></i>
+          </span>{{myData.three.lineSeven}}</li>
+        <li [ngClass]="{'text-muted':myData.four.mutedEight}">
+            <span class="fa-li">
+            <i [ngClass]="{'fa-times':myData.four.mutedEight,'fa-check':!myData.four.mutedEight,fa:true}"></i>
+          </span>{{myData.four.lineEight}}</li>  
+      </ul>
+      <div class="d-grid">
+        <a href="#" class="btn btn-primary text-uppercase">Button</a>
+      </div>
+    </div>
+  </div>
